@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+	        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+    		android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textViewLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incident Type: "
+                android:textSize="22dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewIncident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="22dip" />
+            
+        </LinearLayout>  
+        	        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+    		android:paddingBottom="10dp" >
+            
+   
+        
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textSize="22dip"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:onClick="showDatePickerDialog"
+                android:paddingTop="10dp"
+    			android:paddingBottom="10dp" />
+            
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Time"
+                android:textSize="22dip"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:onClick="showTimePickerDialog"
+                android:paddingTop="10dp"
+    			android:paddingBottom="10dp" />   
+    			</LinearLayout>      
+
+	       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+    		android:paddingBottom="20dp" >
+
+
+            <TextView
+                android:id="@+id/textViewLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:textSize="22dip"
+                android:onClick="showAddLocationActivity" 
+                android:hint="Address"/>
+            
+        </LinearLayout>  
+
+
+        	
+    <EditText
+        android:id="@+id/editTextDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="22dip"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+                        android:paddingTop="10dp" >
+
+        <requestFocus />
+    </EditText>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+        android:paddingTop="50dp">
+        
+    <Button
+        android:id="@+id/addReportSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:width="100dp" 
+        android:background="#CC007AFF"
+        android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

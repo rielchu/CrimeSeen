@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--suppress AndroidDomInspection -->
+
+    <fragment
+      android:id="@+id/map"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:apiKey = "AIzaSyCyzfMdt0N7D0yP0yztxxnr5LMHRZmecoQ"
+      android:name="com.google.android.gms.maps.SupportMapFragment"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentRight="true"
+
+    />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        >
+
+    <Button
+        android:id="@+id/buttonMapDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Done"
+         />
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="incident_types">
+        <item>Battery/Assault</item>
+        <item>Kidnapping</item>
+        <item>Homicide</item>
+        <item>Sexual Offense</item>
+        <item>Theft (Larceny)</item>
+        <item>Robbery</item>
+        <item>Burglary</item>
+        <item>Arson</item>
+        <item>Others</item>
+    </string-array>
+</resources>
